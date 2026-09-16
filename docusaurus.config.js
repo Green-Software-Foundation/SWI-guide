@@ -87,9 +87,10 @@ const config = {
             position: "right",
           },
           {
-            href: "https://greensoftware.foundation/",
+            type: "html",
             position: "right",
-            label: "a Green Software Foundation project",
+            value:
+              '<a href="https://greensoftware.foundation/" target="_blank" rel="noopener noreferrer" class="navbar__link" style="display:flex;align-items:center;gap:6px;"><span style="font-size:0.8rem;">a project of</span><img src="/img/gsf-logo.svg" alt="Green Software Foundation" style="height:14px;width:auto;" /></a>',
           },
         ],
       },
@@ -114,15 +115,15 @@ const config = {
             items: [
               {
                 label: "Trademark Policy",
-                href: "https://greensoftware.foundation/policies/trademark-policy",
+                href: "https://greensoftware.foundation/policy/trademark",
               },
               {
                 label: "Terms of Use",
-                href: "https://greensoftware.foundation/policies/terms-of-use",
+                href: "https://greensoftware.foundation/terms-of-use",
               },
               {
                 label: "Privacy Policy",
-                href: "https://greensoftware.foundation/policies/privacy-policy",
+                href: "https://greensoftware.foundation/privacy-policy",
               },
             ],
           },
@@ -144,6 +145,12 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Green Software Foundation",
+          src: "img/gsf-footer-mark.svg",
+          href: "https://greensoftware.foundation/",
+          width: 48,
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Green Software Foundation. Content licensed CC-BY-4.0, code licensed MIT.`,
       },
       prism: {

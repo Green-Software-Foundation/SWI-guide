@@ -6,11 +6,12 @@ export default function NavbarWrapper(props) {
     <>
       <p
         style={{
-          background: "#f0ffc4",
+          background: "var(--ifm-color-primary-dark)",
+          color: "white",
           textAlign: "center",
-          padding: "16px 32px",
-          color: "var(--ifm-color-primary-dark)",
-          fontWeight: "bold",
+          padding: "6px 16px",
+          fontSize: "0.8rem",
+          margin: 0,
         }}
       >
         You are viewing a project that is currently in draft state for the
