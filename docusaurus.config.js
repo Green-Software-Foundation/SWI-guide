@@ -18,7 +18,6 @@ const config = {
 
   organizationName: "Green-Software-Foundation",
   projectName: "SWI-guide",
-  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
   onBrokenLinks: "throw",

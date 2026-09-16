@@ -81,5 +81,7 @@ Three branches are used, following the SCI Data & Guidance model:
 
 - `dev` — the working branch; all pull requests target `dev`.
 - `main` — the reviewed, "official GSF version" of the content.
-- `web` — the branch that is actually deployed; `.github/workflows/deploy-main.yml`
-  builds this branch and publishes `./build` to `gh-pages`.
+- `web` — the branch that is actually deployed. Netlify is connected to
+  this branch and builds/publishes it directly on every push, using the
+  settings in `netlify.toml` (`yarn build`, publishing the `build`
+  directory).

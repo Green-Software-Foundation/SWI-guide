@@ -11,8 +11,8 @@ This repository uses three long-lived branches:
 - **`main`** — the reviewed, official GSF version of the guidance content.
   Changes land here from `dev` after Standards Working Group (SSWG) review.
 - **`web`** — the branch that is actually deployed to
-  `swi-guide.greensoftware.foundation`. `.github/workflows/deploy-main.yml`
-  builds `web` and publishes the result to `gh-pages`.
+  `swi-guide.greensoftware.foundation`. Netlify builds `web` and publishes
+  the result directly; see `netlify.toml`.
 
 ## What belongs here
 
