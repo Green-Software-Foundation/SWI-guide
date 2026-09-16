@@ -1,0 +1,78 @@
+---
+sidebar_position: 0
+title: Getting Started
+---
+
+<!--
+Grounded in: SWI-Specification.md § Introduction, § Methodology summary → General.
+Guideline Requirement 1 (Purpose and Rationale) — SWI-Guidelines-Requirements-Analysis.md.
+-->
+
+# Getting Started
+
+**This site is draft guidance.** It is a Standards Working Group (SSWG)
+work item within the Green Software Foundation and is not yet officially
+endorsed. Content here — including page structure, worked examples, and
+data-source pointers — should be expected to change as the SSWG's work
+progresses.
+
+## What this site is
+
+This is the **SWI Guidance** site: a non-normative companion to the
+[Software Water Intensity (SWI) Specification](https://github.com/Green-Software-Foundation/SWI).
+It follows the same relationship the Green Software Foundation's SCI
+Guidance project has to the Software Carbon Intensity (SCI) specification:
+the specification states requirements; the guidance explains how to fulfil
+them, with explanation, worked examples, and data-source references.
+
+The two documents are kept deliberately separate. Worked examples,
+diagrams, and data-source guidance need to be revised often — as new
+datasets appear, as methodology matures — without triggering the
+version-control obligations that apply to a normative specification. As
+the SSWG puts it: **the specification states the principle; the guidelines
+explain how to fulfil it.**
+
+## The SWI formula, at a glance
+
+SWI is a rate: the water attributable to a software system, expressed per
+functional unit.
+
+$$SWI = \frac{W}{R}$$
+
+Total water $W$ is the sum of operational water and embodied water:
+
+$$W = W_O + W_M$$
+
+Every component is then quantified on **both** a consumption basis and a
+withdrawal basis, and reported both **unadjusted** (a physical water
+volume) and **stress-adjusted** (weighted by local water scarcity):
+
+$$SWI_b = \frac{W_b}{R}, \qquad SWI_b^{adj} = \frac{\sum_i \left(W_{b,i} \times CF_{b,i}\right)}{R}, \qquad b \in \{c, w\}$$
+
+If any of that is unfamiliar, start with
+[Formula Walkthrough](./FormulaWalkthrough.md), which breaks down every
+term, or jump straight to a [worked example](./QuickGuide.md).
+
+## Where to go from here
+
+- **New to SWI** → [Formula Walkthrough and Visual Reference](./FormulaWalkthrough.md)
+- **Want to see it applied** → [Worked Examples](./QuickGuide.md)
+- **Coming from the SCI** → the Formula Walkthrough page draws the parallel
+  between SWI's and SCI's decompositions explicitly.
+- **Looking for a specific term** → [Terminology and Implementer Language Guide](./Terminology/index.md)
+- **Choosing a data source** → [Data Quality and Implementation Tiers](./DataQuality/index.md)
+- **The normative spec itself** → [SWI Specification](https://github.com/Green-Software-Foundation/SWI)
+
+## Related projects
+
+- [SWI Specification](https://github.com/Green-Software-Foundation/SWI) —
+  the normative document this site explains.
+- [SCI Data & Guidance](https://github.com/Green-Software-Foundation/sci-data-guidance) —
+  the structural precedent for this project, for the Software Carbon
+  Intensity (SCI) specification.
+- [This guide's repository](https://github.com/Green-Software-Foundation/SWI-guide) —
+  source, issues, and contribution guidelines.
+
+---
+
+Please submit any comments you have [here](https://github.com/Green-Software-Foundation/SWI-guide/issues/new?labels=Guidelines+Feedback&title=Feedback%3A+Getting+Started).
