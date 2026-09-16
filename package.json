@@ -49,5 +49,9 @@
   "overrides": {
     "webpack": "5.88.2",
     "cytoscape": "3.28.1"
+  },
+  "resolutions": {
+    "webpack": "5.88.2",
+    "cytoscape": "3.28.1"
   }
 }
