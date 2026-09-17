@@ -28,7 +28,7 @@ actually is: a rate, calculated under stated assumptions.
 
 ## SWI-C and SWI-W
 
-You'll see these written as $SWI_c$ and $SWI_w$ throughout this guidance
+You'll see these written as `SWI_c` and `SWI_w` throughout this guidance
 and the specification. They are the consumption-basis and withdrawal-basis
 results respectively — two separate metrics with two separate calculation
 paths, not two ways of expressing the same number. See
@@ -46,7 +46,7 @@ useful, and it's one input option for estimating
 value: it doesn't cover indirect operational water, it doesn't cover
 embodied water, and it isn't expressed per functional unit. Reporting a
 facility's WUE is not the same thing as reporting that facility's tenants'
-$SWI_c$ or $SWI_w$, and one should never be presented as standing in for
+`SWI_c` or `SWI_w`, and one should never be presented as standing in for
 the other.
 
 ## Consumption vs. withdrawal, in plain terms

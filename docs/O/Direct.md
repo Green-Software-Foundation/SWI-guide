@@ -9,7 +9,7 @@ Grounded in: SWI-Specification.md § Methodology summary → Operational water �
 
 # Direct Operational Water
 
-Direct operational water ($W_O^{dir}$) is water used directly by the
+Direct operational water (`W_O^dir`) is water used directly by the
 facility in which the software executes — cooling towers, humidification,
 and similar facility-level operations. It is the operational water
 component that does not depend on where the electricity came from; it
@@ -30,9 +30,11 @@ Water Usage Effectiveness (WUE) — a facility's water consumption per unit
 of energy, in L/kWh — is **one** option for estimating direct operational
 water consumption, not a required input and not the only valid method:
 
-$$W_{O,c}^{dir} = E \times WUE$$
+```
+W_O,c^dir = E × WUE
+```
 
-where $E$ is the energy the software system consumed, in kWh. If a
+where `E` is the energy the software system consumed, in kWh. If a
 facility reports WUE, this is usually the easiest available estimate. If
 it doesn't, or if better workload-level data exists, use that instead.
 
@@ -51,7 +53,7 @@ This is a known, structural gap in current methodology, not something this
 guidance can resolve by picking a workaround. Where an assessment cannot
 quantify direct operational withdrawal, the specification requires that
 omission — and what it means for the reported withdrawal results — to be
-disclosed rather than silently left out. Reported $SWI_w$ results should be
+disclosed rather than silently left out. Reported `SWI_w` results should be
 read with this gap in mind: an unquantified direct operational withdrawal
 component is not the same thing as a zero one.
 

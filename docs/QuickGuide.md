@@ -33,7 +33,7 @@ downstream services not controlled by this workload.
 ## Step 2 — Scale
 
 Following **Scale**: this API's costs scale with traffic, so we choose
-$R = $ **1,000 API requests** as the functional unit. (An illustrative
+`R = ` **1,000 API requests** as the functional unit. (An illustrative
 example only — a real assessment would justify this choice against how the
 specific workload actually scales, per the
 [Functional Unit](./R/index.md) guidance.)
@@ -53,15 +53,17 @@ underlying hardware.
 
 | Input | Placeholder value |
 | --- | --- |
-| Energy consumed, $E$ (for 20,000 requests this month) | 5 kWh |
-| Facility $WUE$ | 0.3 L/kWh *(illustrative)* |
-| $EWIF_c$ (consumption basis) | 1.8 L/kWh *(illustrative)* |
-| $EWIF_w$ (withdrawal basis) | 4.2 L/kWh *(illustrative)* |
-| Embodied water allocated to this VM, $W_{M,c}$ / $W_{M,w}$ | 0.4 L / 0.9 L *(illustrative, already time-share/resource-share allocated)* |
+| Energy consumed, `E` (for 20,000 requests this month) | 5 kWh |
+| Facility `WUE` | 0.3 L/kWh *(illustrative)* |
+| `EWIF_c` (consumption basis) | 1.8 L/kWh *(illustrative)* |
+| `EWIF_w` (withdrawal basis) | 4.2 L/kWh *(illustrative)* |
+| Embodied water allocated to this VM, `W_M,c` / `W_M,w` | 0.4 L / 0.9 L *(illustrative, already time-share/resource-share allocated)* |
 
 **Direct operational water (consumption basis):**
 
-$$W_{O,c}^{dir} = E \times WUE = 5 \times 0.3 = 1.5\ \text{L}$$
+```
+W_O,c^dir = E × WUE = 5 × 0.3 = 1.5 L
+```
 
 *(No standardised withdrawal equivalent to WUE exists — see
 [Direct Operational Water](./O/Direct.md) for why direct operational
@@ -69,29 +71,31 @@ withdrawal is left unquantified in this example.)*
 
 **Indirect operational water:**
 
-$$W_{O,c}^{ind} = E \times EWIF_c = 5 \times 1.8 = 9.0\ \text{L}$$
-
-$$W_{O,w}^{ind} = E \times EWIF_w = 5 \times 4.2 = 21.0\ \text{L}$$
+```
+W_O,c^ind = E × EWIF_c = 5 × 1.8 = 9.0 L
+W_O,w^ind = E × EWIF_w = 5 × 4.2 = 21.0 L
+```
 
 **Totals for 20,000 requests this month:**
 
 | | Consumption | Withdrawal |
 | --- | --- | --- |
-| $W_O^{dir}$ | 1.5 L | *not quantified (data gap)* |
-| $W_O^{ind}$ | 9.0 L | 21.0 L |
-| $W_M$ | 0.4 L | 0.9 L |
-| **$W_b$** | **10.9 L** | **21.9 L** (indirect + embodied only) |
+| `W_O^dir` | 1.5 L | *not quantified (data gap)* |
+| `W_O^ind` | 9.0 L | 21.0 L |
+| `W_M` | 0.4 L | 0.9 L |
+| **`W_b`** | **10.9 L** | **21.9 L** (indirect + embodied only) |
 
-**Step 5 — Report, unadjusted SWI, scaled to $R = 1{,}000$ requests:**
+**Step 5 — Report, unadjusted SWI, scaled to `R = 1,000` requests:**
 
-$$SWI_c = \frac{10.9}{20} = 0.545\ \text{L per 1,000 requests}$$
+```
+SWI_c = 10.9 / 20 = 0.545 L per 1,000 requests
+SWI_w = 21.9 / 20 = 1.095 L per 1,000 requests
+```
 
-$$SWI_w = \frac{21.9}{20} = 1.095\ \text{L per 1,000 requests}$$
-
-A full report would also apply characterization factors ($CF_{c,i}$,
-$CF_{w,i}$) for the region where the electricity was generated, per
-[Stress Characterisation](./CF/index.md), to produce $SWI_c^{adj}$ and
-$SWI_w^{adj}$ — omitted here since this walkthrough is illustrating the
+A full report would also apply characterization factors (`CF_c,i`,
+`CF_w,i`) for the region where the electricity was generated, per
+[Stress Characterisation](./CF/index.md), to produce `SWI_c^adj` and
+`SWI_w^adj` — omitted here since this walkthrough is illustrating the
 unadjusted mechanics only.
 
 ## What this example is not

@@ -52,17 +52,23 @@ number meaningful.
 
 ## Both are required reporting outputs
 
-$$W_c = W_{O,c} + W_{M,c} \qquad SWI_c = \frac{W_c}{R}$$
+```
+W_c = W_O,c + W_M,c
+SWI_c = W_c / R
+```
 
-$$W_w = W_{O,w} + W_{M,w} \qquad SWI_w = \frac{W_w}{R}$$
+```
+W_w = W_O,w + W_M,w
+SWI_w = W_w / R
+```
 
 Per the specification's Reporting clause, the consumption-basis results
-($SWI_c$, and its stress-adjusted counterpart $SWI_c^{adj}$) are
-**mandatory**; the withdrawal-basis results ($SWI_w$, $SWI_w^{adj}$) are
+(`SWI_c`, and its stress-adjusted counterpart `SWI_c^adj`) are
+**mandatory**; the withdrawal-basis results (`SWI_w`, `SWI_w^adj`) are
 **recommended** — reflecting, among other things, the withdrawal data gap
 described on the [Direct Operational Water](../O/Direct.md) page. Neither
-is an optional alternate to the other where both can be produced — $SWI_c$
-and $SWI_w$ answer different questions and both should be reported when
+is an optional alternate to the other where both can be produced — `SWI_c`
+and `SWI_w` answer different questions and both should be reported when
 the underlying data supports it.
 
 ---

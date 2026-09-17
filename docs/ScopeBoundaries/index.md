@@ -25,8 +25,8 @@ been made, this guidance says so rather than quietly picking an answer.
 ## Consumption vs. withdrawal
 
 This boundary is already resolved and covered in full on the
-[Water Accounting Basis](../AccountingBasis/index.md) page: both $SWI_c$
-and $SWI_w$ are required or recommended reporting outputs, and they must
+[Water Accounting Basis](../AccountingBasis/index.md) page: both `SWI_c`
+and `SWI_w` are required or recommended reporting outputs, and they must
 never be conflated or summed.
 
 ## Freshwater vs. saltwater

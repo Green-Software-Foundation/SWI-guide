@@ -16,19 +16,23 @@ infrastructure in the first place.
 
 The specification splits operational water into two components:
 
-$$W_O = W_O^{dir} + W_O^{ind}$$
+```
+W_O = W_O^dir + W_O^ind
+```
 
-- **[Direct operational water](./Direct.md)** ($W_O^{dir}$) — water used
+- **[Direct operational water](./Direct.md)** (`W_O^dir`) — water used
   directly by the facility the software executes in: cooling,
   humidification, and similar facility operations.
-- **[Indirect operational water](./Indirect.md)** ($W_O^{ind}$) — water
+- **[Indirect operational water](./Indirect.md)** (`W_O^ind`) — water
   used generating the electricity the software consumes, at whichever
   power plant supplied it.
 
 Both are quantified separately for the consumption basis and the
 withdrawal basis (see [Water Accounting Basis](../AccountingBasis/index.md)):
 
-$$W_{O,b} = W_{O,b}^{dir} + W_{O,b}^{ind}, \quad b \in \{c, w\}$$
+```
+W_O,b = W_O,b^dir + W_O,b^ind   (for each basis b: c = consumption, w = withdrawal)
+```
 
 The direct/indirect split matters because the two components come from
 different places, use different data, and — as the

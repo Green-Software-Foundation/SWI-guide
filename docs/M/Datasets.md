@@ -23,7 +23,7 @@ start, no credible, public dataset for hardware lifecycle water intensity
 has been identified in SSWG discussions to date. Rather than fill this gap
 with an invented or unverified figure, this guidance states that plainly:
 **as of this version, implementers have no standard reference source for
-$TW_b$ (total lifecycle water for a piece of hardware).**
+`TW_b` (total lifecycle water for a piece of hardware).**
 
 This mirrors, in a more acute form, the same data-availability challenge
 seen elsewhere in this guidance (compare

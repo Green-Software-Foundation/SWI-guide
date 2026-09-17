@@ -18,15 +18,18 @@ difference.
 
 ## The mechanism
 
-A **characterization factor**, $CF_{b,i}$, is a dimensionless multiplier
+A **characterization factor**, `CF_b,i`, is a dimensionless multiplier
 applied to a physical water volume to reflect the water-stress conditions
-of the region or watershed $i$ where that water use actually occurred, for
-accounting basis $b$. Applying it converts an unadjusted, physical-volume
+of the region or watershed `i` where that water use actually occurred, for
+accounting basis `b`. Applying it converts an unadjusted, physical-volume
 result into a stress-adjusted one:
 
-$$SWI_b^{adj} = \frac{\sum_i \left( W_{b,i} \times CF_{b,i} \right)}{R}, \quad b \in \{c, w\}$$
+```
+SWI_b^adj = sum over region i of (W_b,i × CF_b,i) / R
+(for each basis b: c = consumption, w = withdrawal)
+```
 
-Setting $CF_{b,i} = 1$ for every region recovers the unadjusted result —
+Setting `CF_b,i = 1` for every region recovers the unadjusted result —
 but the specification is explicit that an unadjusted result must always be
 *reported* as a physical water intensity, never presented as if it were
 stress-adjusted.
@@ -41,9 +44,9 @@ different questions.
 ## Recommended methods
 
 - **AWARE** is recommended for stress-adjusting **water consumption**
-  ($SWI_c^{adj}$).
+  (`SWI_c^adj`).
 - **WRI Aqueduct** is recommended for stress-adjusting **water
-  withdrawal** ($SWI_w^{adj}$).
+  withdrawal** (`SWI_w^adj`).
 
 Both methods are scoped to **freshwater only** — a boundary decision
 discussed further on the

@@ -9,13 +9,13 @@ Grounded in: SWI-Specification.md § Terms and definitions (3.8), § Methodology
 
 # Functional Unit (R)
 
-$R$ is the reference unit an SWI value is expressed **per**: an API call, a
+`R` is the reference unit an SWI value is expressed **per**: an API call, a
 user, an AI training run, or whatever quantified performance
 characteristic best describes how the software system actually scales.
-Every SWI value is a rate — water per unit of $R$ — so choosing $R$ well is
+Every SWI value is a rate — water per unit of `R` — so choosing `R` well is
 foundational to the result being meaningful at all.
 
-## Choosing $R$
+## Choosing `R`
 
 The specification's own guidance is simple to state and easy to get wrong
 in practice: **the functional unit should match how the software scales.**
@@ -26,18 +26,18 @@ software's resource use, not the unit that happens to be easiest to
 measure.
 
 This is the same discipline the SCI specification applies to its own
-functional unit — if you've chosen $R$ for an SCI assessment of the same
+functional unit — if you've chosen `R` for an SCI assessment of the same
 system, that choice is very likely to transfer directly to its SWI
 assessment.
 
-## Every component must scale to the same $R$
+## Every component must scale to the same `R`
 
 All elements of the SWI calculation — direct operational water, indirect
 operational water, and embodied water — must be expressed against the
 *same* functional unit before they're combined. It's not enough for the
-final result to be labelled "per $R$"; each underlying component has to
+final result to be labelled "per `R`"; each underlying component has to
 actually have been measured or estimated on a basis that scales
-consistently with $R$.
+consistently with `R`.
 
 ## Combining components with different functional units
 

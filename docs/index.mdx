@@ -37,17 +37,25 @@ explain how to fulfil it.**
 SWI is a rate: the water attributable to a software system, expressed per
 functional unit.
 
-$$SWI = \frac{W}{R}$$
+```
+SWI = W / R
+```
 
-Total water $W$ is the sum of operational water and embodied water:
+Total water `W` is the sum of operational water and embodied water:
 
-$$W = W_O + W_M$$
+```
+W = W_O + W_M
+```
 
 Every component is then quantified on **both** a consumption basis and a
 withdrawal basis, and reported both **unadjusted** (a physical water
 volume) and **stress-adjusted** (weighted by local water scarcity):
 
-$$SWI_b = \frac{W_b}{R}, \qquad SWI_b^{adj} = \frac{\sum_i \left(W_{b,i} \times CF_{b,i}\right)}{R}, \qquad b \in \{c, w\}$$
+```
+SWI_b = W_b / R
+SWI_b_adj = sum over region i of (W_b,i × CF_b,i) / R
+(for each basis b: c = consumption, w = withdrawal)
+```
 
 If any of that is unfamiliar, start with
 [Formula Walkthrough](./FormulaWalkthrough.md), which breaks down every
