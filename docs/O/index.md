@@ -5,16 +5,26 @@ title: Operational Water
 
 <!--
 Grounded in: SWI-Specification.md § Terms and definitions (3.4–3.6), § Methodology summary → Operational water.
+Formula Card per §1b of the SWI Guidance build brief.
 -->
 
 # Operational Water
 
-Operational water is the water used while a software system's
-infrastructure is actually running — as distinct from
+**In short:** operational water is the water used while a software
+system's infrastructure is actually running — as distinct from
 [embodied water](../M/index.md), which is used building that
-infrastructure in the first place.
+infrastructure in the first place. It splits two ways: water the data
+centre uses directly to cool itself, and water used somewhere else
+entirely — at the power plant — to generate the electricity the data
+centre is drawing.
 
-The specification splits operational water into two components:
+**Shape:** cooling-tower water + power-plant water = operational water.
+
+**Worked:** a workload's operational water for one month totals 420 L —
+150 L direct (at the facility) + 270 L indirect (at the power plant).
+*(illustrative placeholder, not a real measurement)*
+
+**Precise notation:**
 
 ```
 W_O = W_O^dir + W_O^ind

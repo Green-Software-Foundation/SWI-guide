@@ -11,6 +11,13 @@ Part C, Open Question 1 — SWI-Guidelines-Requirements-Analysis.md.
 
 # EWIF — Average vs. Marginal Water Intensity
 
+**In short:** there are two different, both legitimate, ways to answer
+"how thirsty is this electricity" — the average across everything
+generating power right now, or the specific plant that would ramp up if
+your workload used more. They can give different numbers for the same
+situation, and the SSWG hasn't yet settled which one implementers should
+default to.
+
 :::caution Open methodological question
 This is an **open, unresolved question** within the SSWG, not a settled
 methodology choice. The specification deliberately takes no position on

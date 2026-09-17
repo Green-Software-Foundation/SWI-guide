@@ -10,6 +10,13 @@ Guideline Requirement 9 (Motivating Context and Background) — SWI-Guidelines-R
 
 # Background — The Water Footprint of Software
 
+**In short:** software doesn't use water the way a factory does, but it
+causes water use all the same — through the electricity it draws, the
+data centres it runs in, and the hardware it's built from. Unlike carbon,
+where a tonne of CO₂ matters the same everywhere, water matters differently
+depending on exactly where it was used — which is the one idea on this
+page worth sitting with longest.
+
 ## Why water, and why now
 
 Software does not use water directly in any way most practitioners are

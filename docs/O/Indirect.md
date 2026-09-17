@@ -10,9 +10,20 @@ Guideline Requirement 4 (EWIF Data Source Guidance) — SWI-Guidelines-Requireme
 
 # Indirect Operational Water
 
-Indirect operational water (`W_O^ind`) is water used generating the
-electricity a software system consumes — at the power plant, not at the
-compute facility. It is calculated as:
+**In short:** indirect operational water (`W_O^ind`) is water used
+generating the electricity a software system consumes — at the power
+plant, not at the compute facility. It follows exactly the same shape as
+direct operational water — it's just measuring thirst at the power plant
+instead of the data centre.
+
+**Shape:** energy used × water-per-unit-of-energy-generated (the
+Electricity Water Intensity Factor, or EWIF) = indirect operational water.
+
+**Worked:** 300 kWh × 0.9 L/kWh = 270 L. *(illustrative placeholder, not a
+real measurement — note this is the same energy figure used in the direct
+operational water example, just asked a different "how thirsty" question)*
+
+**Precise notation:**
 
 ```
 W_O,b^ind = E × EWIF_b   (for each basis b: c = consumption, w = withdrawal)

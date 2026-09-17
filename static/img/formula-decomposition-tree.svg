@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1308 744" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="Decomposition tree: total water W splits into operational water W_O and embodied water W_M; operational water splits further into direct and indirect; every leaf resolves to a consumption or withdrawal basis, then a characterization factor.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fb8ae"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1308" height="744" rx="16" fill="#073b34"/>
+
+  <text x="54" y="54" font-size="13" font-weight="700" letter-spacing="1.5" fill="#aecc53">SOFTWARE WATER IMPACT · GUIDANCE</text>
+  <text x="54" y="100" font-size="38" font-weight="800" fill="#ffffff">The decomposition, as a tree</text>
+
+  <g transform="translate(1170,50)">
+    <rect x="0" y="0" width="30" height="30" rx="6" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <path d="M15,7 L21,12 V22 H9 V12 Z" fill="none" stroke="#ffffff" stroke-width="1.3"/>
+    <text x="38" y="21" font-size="17" font-weight="800" fill="#ffffff">GSF</text>
+  </g>
+
+  <text x="1256" y="124" font-size="13" fill="#dfeee9" text-anchor="end">Every branch resolves to a basis —</text>
+  <text x="1256" y="144" font-size="13" fill="#dfeee9" text-anchor="end">consumption or withdrawal — then a</text>
+  <text x="1256" y="164" font-size="13" fill="#dfeee9" text-anchor="end">characterization factor.</text>
+
+  <!-- Root -->
+  <rect x="490" y="168" width="456" height="54" rx="27" fill="#aecc53"/>
+  <text x="520" y="202" font-size="20" font-weight="800" fill="#073b34">W</text>
+  <line x1="540" y1="184" x2="540" y2="206" stroke="#073b34" stroke-width="1.5" opacity="0.5"/>
+  <text x="556" y="201" font-size="15" fill="#073b34">total water attributable to the software system</text>
+
+  <!-- Panels -->
+  <rect x="40" y="242" width="724" height="374" rx="12" fill="#0a3a34" stroke="#ffffff" stroke-opacity="0.08"/>
+  <rect x="818" y="242" width="440" height="374" rx="12" fill="#0a3a34" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- Root connectors -->
+  <path d="M600,222 C500,240 460,240 402,260" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M836,222 C960,240 1000,240 1035,260" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- W_O header -->
+  <rect x="286" y="262" width="231" height="38" rx="8" fill="#0f4a42" stroke="#aecc53" stroke-width="1.5"/>
+  <text x="402" y="286" font-size="15" text-anchor="middle" fill="#ffffff"><tspan font-weight="800" fill="#aecc53">W_O</tspan> operational water</text>
+
+  <!-- W_M header -->
+  <rect x="920" y="262" width="231" height="38" rx="8" fill="#0f4a42" stroke="#aecc53" stroke-width="1.5"/>
+  <text x="1035" y="286" font-size="15" text-anchor="middle" fill="#ffffff"><tspan font-weight="800" fill="#aecc53">W_M</tspan> embodied water</text>
+
+  <!-- W_O -> dir/ind connectors -->
+  <path d="M360,300 C300,320 260,320 224,345" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M444,300 C500,320 540,320 578,345" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Direct / Indirect boxes -->
+  <rect x="88" y="345" width="272" height="58" rx="8" fill="#0f4a42" stroke="#aecc53" stroke-width="1.5"/>
+  <text x="224" y="368" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">W_O^dir — direct operational water</text>
+  <text x="224" y="387" font-size="12" text-anchor="middle" fill="#aecc53">at the compute facility</text>
+
+  <rect x="443" y="345" width="272" height="58" rx="8" fill="#0f4a42" stroke="#aecc53" stroke-width="1.5"/>
+  <text x="579" y="368" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">W_O^ind — indirect operational water</text>
+  <text x="579" y="387" font-size="12" text-anchor="middle" fill="#aecc53">from electricity generation</text>
+
+  <!-- Connectors to consumption/withdrawal leaves under O -->
+  <path d="M170,403 C150,425 150,430 136,463" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M278,403 C300,425 300,430 312,463" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M525,403 C505,425 505,430 489,463" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M633,403 C655,425 655,430 667,463" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Leaf boxes under O (consumption/withdrawal) -->
+  <g font-size="13" font-weight="700" fill="#073b34" text-anchor="middle">
+    <rect x="57" y="463" width="158" height="42" rx="6" fill="#ffffff"/>
+    <text x="136" y="489">consumption basis</text>
+    <rect x="233" y="463" width="158" height="42" rx="6" fill="#ffffff"/>
+    <text x="312" y="489">withdrawal basis</text>
+    <rect x="410" y="463" width="158" height="42" rx="6" fill="#ffffff"/>
+    <text x="489" y="489">consumption basis</text>
+    <rect x="589" y="463" width="158" height="42" rx="6" fill="#ffffff"/>
+    <text x="667" y="489">withdrawal basis</text>
+  </g>
+
+  <!-- connectors to CF boxes under O -->
+  <path d="M136,505 L136,565" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M312,505 L312,565" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M489,505 L489,565" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M667,505 L667,565" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- CF dashed boxes under O -->
+  <g font-size="11" fill="#ffffff" text-anchor="middle">
+    <rect x="57" y="565" width="158" height="42" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-dasharray="4 3"/>
+    <text x="136" y="591">× characterization factor</text>
+    <rect x="233" y="565" width="158" height="42" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-dasharray="4 3"/>
+    <text x="312" y="591">× characterization factor</text>
+    <rect x="410" y="565" width="158" height="42" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-dasharray="4 3"/>
+    <text x="489" y="591">× characterization factor</text>
+    <rect x="589" y="565" width="158" height="42" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-dasharray="4 3"/>
+    <text x="667" y="591">× characterization factor</text>
+  </g>
+
+  <!-- W_M -> leaves connectors -->
+  <path d="M990,300 C950,320 940,325 912,349" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M1080,300 C1120,320 1140,325 1157,349" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Leaf boxes under M -->
+  <g font-size="13" font-weight="700" fill="#073b34" text-anchor="middle">
+    <rect x="833" y="349" width="159" height="40" rx="6" fill="#ffffff"/>
+    <text x="912" y="374">consumption basis</text>
+    <rect x="1080" y="349" width="159" height="40" rx="6" fill="#ffffff"/>
+    <text x="1157" y="374">withdrawal basis</text>
+  </g>
+
+  <path d="M912,389 L912,463" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M1157,389 L1157,463" fill="none" stroke="#8fb8ae" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g font-size="11" fill="#ffffff" text-anchor="middle">
+    <rect x="833" y="463" width="159" height="42" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-dasharray="4 3"/>
+    <text x="912" y="489">× characterization factor</text>
+    <rect x="1080" y="463" width="159" height="42" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-dasharray="4 3"/>
+    <text x="1157" y="489">× characterization factor</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="40" y1="655" x2="1256" y2="655" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="40" y="690" font-size="13" fill="#dfeee9" opacity="0.85">W = W_O + W_M  ·  W_O = W_O^dir + W_O^ind</text>
+  <text x="1256" y="690" font-size="13" fill="#dfeee9" opacity="0.85" text-anchor="end">Software Water Impact · SWI Guidance</text>
+</svg>

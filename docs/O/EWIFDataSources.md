@@ -11,6 +11,12 @@ SWI-Guidelines-Requirements-Analysis.md.
 
 # EWIF — Data Sources and Implementation Guidance
 
+**In short:** to calculate indirect operational water you need a number
+for "how much water does generating electricity here actually cost" —
+that number is EWIF, and this page is where to find it. Use the most
+detailed data you can get; fall back to broader defaults only when you
+have to, and say so when you do.
+
 The specification states the EWIF principle — reflect the water intensity
 of electricity generation at its point of generation, matched to the
 correct accounting basis, region, and period — but deliberately leaves

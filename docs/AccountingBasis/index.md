@@ -9,11 +9,25 @@ Grounded in: SWI-Specification.md § Terms and definitions (3.1–3.3), § Metho
 
 # Water Accounting Basis
 
-Every water quantity in an SWI assessment has to be classified as one of
-two things: consumption, or withdrawal. This classification is the **water
-accounting basis**, and it is not optional or a matter of convenience —
-the two describe genuinely different pressures on a water system and the
-specification requires both to be quantified and reported.
+**In short:** do the whole SWI add-up twice, not once — once counting only
+water that left the local watershed for good (**consumption**), and again
+counting all water pulled from the ground or a river regardless of whether
+it came back (**withdrawal**). These are two different questions about two
+different kinds of pressure on a water system, not two ways of asking the
+same thing — so they're never averaged or summed together. This
+classification is the **water accounting basis**, and it is not optional
+or a matter of convenience: the specification requires both to be
+quantified and reported.
+
+**Precise notation:**
+
+```
+W_c = W_O,c + W_M,c        SWI_c = W_c / R
+W_w = W_O,w + W_M,w        SWI_w = W_w / R
+```
+
+The sections below define each term precisely and explain why they can
+never be conflated.
 
 ## Consumption
 
@@ -51,16 +65,6 @@ the two together would erase exactly the distinction that makes each
 number meaningful.
 
 ## Both are required reporting outputs
-
-```
-W_c = W_O,c + W_M,c
-SWI_c = W_c / R
-```
-
-```
-W_w = W_O,w + W_M,w
-SWI_w = W_w / R
-```
 
 Per the specification's Reporting clause, the consumption-basis results
 (`SWI_c`, and its stress-adjusted counterpart `SWI_c^adj`) are

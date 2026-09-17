@@ -9,11 +9,21 @@ Grounded in: SWI-Specification.md § Methodology summary → Operational water �
 
 # Direct Operational Water
 
-Direct operational water (`W_O^dir`) is water used directly by the
-facility in which the software executes — cooling towers, humidification,
-and similar facility-level operations. It is the operational water
-component that does not depend on where the electricity came from; it
-depends on how the facility itself is cooled.
+**In short:** direct operational water (`W_O^dir`) is water used directly
+by the facility in which the software executes — cooling towers,
+humidification, and similar facility-level operations. Unlike indirect
+operational water, it doesn't depend on where the electricity came from;
+it depends on how the facility itself is cooled. It scales with how much
+electricity your workload used, multiplied by how thirsty that particular
+data centre is per unit of electricity — the same shape as "miles driven ×
+gallons per mile = gallons used," just water and electricity instead of
+fuel and distance.
+
+**Shape:** energy used × water-per-unit-of-energy (the facility's WUE) =
+direct operational water.
+
+**Worked:** 300 kWh × 0.5 L/kWh = 150 L. *(illustrative placeholder, not a
+real measurement)*
 
 ## Measurement and allocation
 
@@ -28,7 +38,8 @@ consistent and disclosed.
 
 Water Usage Effectiveness (WUE) — a facility's water consumption per unit
 of energy, in L/kWh — is **one** option for estimating direct operational
-water consumption, not a required input and not the only valid method:
+water consumption, not a required input and not the only valid method.
+This is the precise version of the formula already introduced above:
 
 ```
 W_O,c^dir = E × WUE
@@ -41,9 +52,11 @@ it doesn't, or if better workload-level data exists, use that instead.
 ## The withdrawal data gap
 
 Here is the limitation to keep in view: **WUE characterizes consumption,
-not withdrawal.** There is currently no widely adopted facility-level
-metric equivalent to WUE for allocating direct operational *withdrawal* to
-a software workload. If a facility measures and discloses its own
+not withdrawal.** There's currently no agreed way to do the same sum for
+withdrawal — that's a real gap, not something this page is glossing over.
+No widely adopted facility-level metric equivalent to WUE exists yet for
+allocating direct operational *withdrawal* to a software workload. If a
+facility measures and discloses its own
 withdrawal, that measured data can be used, or an organization-specific
 allocation method can be applied where one is available and documented —
 but absent one of those, direct operational withdrawal simply cannot be

@@ -9,6 +9,11 @@ Grounded in: SWI-Specification.md § Terms and definitions (3.8), § Methodology
 
 # Functional Unit (R)
 
+**In short:** every SWI number is a rate — water per *something*, not a
+raw total. `R` is that something. Get it wrong and the number stops being
+comparable to anything, even to a different measurement of the same
+system.
+
 `R` is the reference unit an SWI value is expressed **per**: an API call, a
 user, an AI training run, or whatever quantified performance
 characteristic best describes how the software system actually scales.

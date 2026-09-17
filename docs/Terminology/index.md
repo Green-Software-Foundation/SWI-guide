@@ -11,6 +11,11 @@ Part C, Open Question 4 — SWI-Guidelines-Requirements-Analysis.md (ISO 14046 c
 
 # Terminology and Implementer Language Guide
 
+**In short:** a handful of terms on this site get misread or conflated
+more often than the rest — this page collects them in one place, in plain
+language, so you don't have to reconstruct the precise meaning from
+context every time one comes up.
+
 ## "Attributable to" vs. "intensity of"
 
 You may see an SWI assessment described either as measuring water

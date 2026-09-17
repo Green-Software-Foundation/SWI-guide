@@ -9,12 +9,13 @@ Grounded in: SWI-Specification.md § Methodology summary → Embodied water (TS/
 
 # Embodied Water — Allocation Calculations
 
-This page walks through choosing the four inputs that determine how much
-of a shared piece of hardware's embodied water is allocated to a given
-software system: `TiR`, `EL`, `RR`, and `ToR`. If you have allocated
-embodied carbon under the SCI specification, this will be a very familiar
-exercise — the mechanics are the same, applied to a water total instead of
-a carbon total.
+**In short:** [Embodied Water](./index.md) introduced the shared-taxi-fare
+idea — you're only charged for the stops you rode and the seats you took.
+This page walks through choosing the four real-world inputs that pin down
+those two fractions for a piece of shared hardware: `TiR`, `EL`, `RR`, and
+`ToR`. If you have allocated embodied carbon under the SCI specification,
+this will be a very familiar exercise — the mechanics are the same,
+applied to a water total instead of a carbon total.
 
 ## Time share: `TS = TiR / EL`
 

@@ -11,6 +11,12 @@ Part C, Open Questions 2 and 5 — SWI-Guidelines-Requirements-Analysis.md.
 
 # Scope Boundary Decisions — Rationale and Documentation
 
+**In short:** SWI doesn't try to count every possible water impact —
+it draws deliberate lines around what counts, and this page explains
+where those lines currently sit and why. Some lines (freshwater only,
+potable vs. non-potable left undecided) are choices the SSWG could
+revisit; none of them are accidents.
+
 ## Design philosophy
 
 Every boundary decision in an SWI assessment — what's included, what's

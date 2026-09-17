@@ -10,6 +10,12 @@ Guideline Requirement 11 (Implementation Tiers and Data Quality Framework) — S
 
 # Data Quality and Implementation Tiers
 
+**In short:** not all water data is equally trustworthy, and the spec
+doesn't hand implementers a single approved number to use. This page
+gives a three-tier way to judge whatever source you do use, and a
+disclosure rule for each tier, so different reports stay comparable even
+when their underlying data quality differs.
+
 The specification tells implementers *what* to quantify. It deliberately
 does not tell them exactly *which dataset* to use for every input — data
 availability varies too much by region and by generation type for a single
